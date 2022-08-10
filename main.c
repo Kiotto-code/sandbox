@@ -6,7 +6,7 @@
 /*   By: jhii <jhii@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/09 17:49:43 by jhii              #+#    #+#             */
-/*   Updated: 2022/08/09 20:36:26 by jhii             ###   ########.fr       */
+/*   Updated: 2022/08/10 14:24:55 by jhii             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,11 @@
 
 int	main(int argc, char **argv)
 {
+	t_cub	cub;
+
 	(void)argv;
 	if (argc != 2)
 		return(printf("Error: Invalid number of arguments..\n"));
-	cub3d();
+	cub3d(&cub);
 	return (0);
 }
