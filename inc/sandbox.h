@@ -6,7 +6,7 @@
 /*   By: jhii <jhii@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/09 17:50:22 by jhii              #+#    #+#             */
-/*   Updated: 2022/11/08 13:19:14 by jhii             ###   ########.fr       */
+/*   Updated: 2022/11/08 13:28:44 by jhii             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,6 @@
 # include <stdlib.h>
 # include <unistd.h>
 
-void	sandbox(void);
+void	sandbox(int argc, char **argv);
 
 #endif

@@ -6,11 +6,11 @@
 /*   By: jhii <jhii@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/09 18:02:38 by jhii              #+#    #+#             */
-/*   Updated: 2022/11/08 13:19:25 by jhii             ###   ########.fr       */
+/*   Updated: 2022/11/08 13:28:30 by jhii             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../inc/sandbox.h"
 
-void	sandbox(void)
+void	sandbox(int argc, char **argv)
 {}
