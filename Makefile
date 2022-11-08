@@ -1,8 +1,7 @@
-NAME = cub3d
+NAME = sandbox
 
 GCC = gcc
 CFLAGS = -Wall -Wextra -Werror #-fsanitize=address -g3
-MLXFLAGS = -lmlx -framework OpenGL -framework AppKit
 INCLUDES = -Iinc
 RM = rm -rf
 
@@ -12,7 +11,7 @@ LIB_PATH = libft
 ANNOYING = .vscode
 
 MAIN = main.c
-SRC = cub3d.c
+SRC = sandbox.c
 OBJ = ${addprefix ${OBJ_PATH}/, ${SRC:.c=.o}}
 
 LIBFT = ${LIB_PATH}/libft.a
@@ -21,7 +20,7 @@ LIBFT_DIR = -L${LIB_PATH} -lft
 all: ${NAME}
 
 ${NAME}: ${OBJ} ${LIBFT}
-	@${GCC} ${CFLAGS} ${INCLUDES} ${MLXFLAGS} -o ${NAME} ${MAIN} ${OBJ} ${LIBFT_DIR}
+	@${GCC} ${CFLAGS} ${INCLUDES} -o ${NAME} ${MAIN} ${OBJ} ${LIBFT_DIR}
 
 ${LIBFT}:
 	@make re -C ${LIB_PATH}
@@ -29,9 +28,6 @@ ${LIBFT}:
 ${OBJ_PATH}/%.o: ${SRC_PATH}/%.c
 	@mkdir -p ${@D}
 	@${GCC} ${CFLAGS} ${INCLUDES} -c $< -o $@
-
-test: cubclean all
-	@./cub3d maps/map.cub
 
 clean:
 	@${RM} ${ANNOYING}
