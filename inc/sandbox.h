@@ -6,7 +6,7 @@
 /*   By: jhii <jhii@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/09 17:50:22 by jhii              #+#    #+#             */
-/*   Updated: 2022/11/08 13:28:44 by jhii             ###   ########.fr       */
+/*   Updated: 2022/11/10 15:26:32 by jhii             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,10 +24,10 @@
 # define WHITE		"\033[37m"
 
 # include "libft.h"
-# include <stdio.h>
-# include <stdlib.h>
 # include <unistd.h>
+# include <string.h>
+# include <sys/wait.h>
 
-void	sandbox(int argc, char **argv);
+int	sandbox(int argc, char **argv, char **envp);
 
 #endif

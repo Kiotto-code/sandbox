@@ -6,14 +6,13 @@
 /*   By: jhii <jhii@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/09 17:49:43 by jhii              #+#    #+#             */
-/*   Updated: 2022/11/08 13:28:14 by jhii             ###   ########.fr       */
+/*   Updated: 2022/11/10 14:59:47 by jhii             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "inc/sandbox.h"
 
-int	main(int argc, char **argv)
+int	main(int argc, char **argv, char **envp)
 {
-	sandbox(argc, argv);
-	return (0);
+	return (sandbox(argc, argv, envp));
 }
