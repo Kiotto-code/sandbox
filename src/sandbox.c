@@ -6,7 +6,7 @@
 /*   By: jhii <jhii@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/09 18:02:38 by jhii              #+#    #+#             */
-/*   Updated: 2022/11/10 15:42:24 by jhii             ###   ########.fr       */
+/*   Updated: 2022/11/14 16:13:10 by jhii             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int	ft_printerror(char *str, char *arg)
 {
-		write(2, str, ft_strlen(str));
+	write(2, str, ft_strlen(str));
 	if (arg)
 		write(2, arg, ft_strlen(arg));
 	write(2, "\n", 1);

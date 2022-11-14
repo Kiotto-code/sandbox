@@ -1,4 +1,4 @@
-NAME = sandbox
+NAME = microshell
 
 GCC = gcc
 CFLAGS = -Wall -Wextra -Werror #-fsanitize=address -g3
