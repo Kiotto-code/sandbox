@@ -6,7 +6,7 @@
 /*   By: jhii <jhii@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/09 18:02:38 by jhii              #+#    #+#             */
-/*   Updated: 2022/11/14 16:13:10 by jhii             ###   ########.fr       */
+/*   Updated: 2022/11/14 16:44:32 by jhii             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,8 +42,8 @@ int	sandbox(int argc, char **argv, char **envp)
 
 	while (argv[i] && argv[i + 1])
 	{
-		i = 0;
 		argv = &argv[i + 1];
+		i = 0;
 		while (argv[i] && strcmp(argv[i], ";") && strcmp(argv[i], "|"))
 			i++;
 		if (strcmp(argv[0], "cd") == 0)
